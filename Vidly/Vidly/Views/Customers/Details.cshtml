@@ -1,0 +1,17 @@
+﻿@model Vidly.ViewModel.RandomMovieViewModel
+@{
+    ViewBag.Title = "Customers Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>CUSTOMERS</h1>
+
+<ul>
+
+    Name: @Model.Customers[0].Name
+    Birthdate: @Model.Customers[0].Birthdate.Date
+    Membership Type: @Model.Customers[0].MembershipType.Name
+
+</ul>
+
+
